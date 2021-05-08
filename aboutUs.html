@@ -12,11 +12,12 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
     <title>KC Dealership</title>
 </head>
 
-<body>
+<body ng-app="">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-xl">
@@ -59,81 +60,7 @@
 
 
     <!-- Footer -->
-    <section class="footers bg-light pt-5 pb-3 pt-1">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 footers-one">
-                    <div class="footers-logo navbar-brand">
-                        <img src="img/Image/logo.png" alt="Logo" style="width: 36px;"> Dealership
-                    </div>
-                    <div class="footers-info mt-3">
-                        <p>262 74 Ängelholm, Sweden
-                            +46 431 45 44 60
-                            info@koenigsegg.com</p>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/"><i id="social-fb"
-                                class="fab fa-facebook-square fa-2x social"></i></a>
-                        <a href="https://twitter.com/"><i id="social-tw"
-                                class="fab fa-twitter-square fa-2x social"></i></a>
-                        <a href="https://www.instagram.com"><i id="social-ig"
-                                class="fab fa-instagram-square fa-2x social"></i></a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox"><i id="social-em"
-                                class="fas fa-envelope-square fa-2x social"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2 footers-two nav-item">
-                    <h5>Quick Link </h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="cars.html">Models</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="aboutUs.html">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2 footers-three nav-item">
-                    <h5>Information </h5>
-                    <ul class="list-unstyled">
-                        <li><a href="aboutUs.html">Our Location</a></li>
-                        <li><a href="aboutUs.html">Advice</a></li>
-                        <li><a href="https://www.youtube.com/">Videos</a></li>
-                        <li><a href="aboutUs.html">Blog</a></li>
-                        <li><a href="aboutUs.html">Services</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2 footers-four nav-item">
-                    <h5>Explore </h5>
-                    <ul class="list-unstyled">
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="aboutUs.html">Sitemap</a></li>
-                        <li><a href="aboutUs.html">Testimonials</a></li>
-                        <li><a href="aboutUs.html">Feedbacks</a></li>
-                        <li><a href="aboutUs.html">User Agreement</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2 footers-five">
-                    <h5>Company </h5>
-                    <ul class="list-unstyled">
-                        <li><a href="aboutUs.html">For Parters</a></li>
-                        <li><a href="aboutUs.html">Cookie Policy</a></li>
-                        <li><a href="aboutUs.html">Disclaimer</a></li>
-                        <li><a href="aboutUs.html">Service</a></li>
-                        <li><a href="aboutUs.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="copyright border">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12 pt-3">
-                    <p class="text-muted">© 2018 xyz Software Pvt. Ltd.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div ng-include="'footer.html'"></div>
     <!-- End -->
 
 
