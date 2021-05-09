@@ -2,6 +2,33 @@ body{
     font-family: sans-serif;
 }
 
+.card{
+    font-family: 'Roboto', sans-serif;
+    border-color: white;
+    border-radius: 10px;
+
+}
+
+.logo{
+    width: 90px;
+}
+
+.card-title{
+    margin-bottom: 0px ;
+    margin-top: 0px ;
+    font-weight: 500;
+}
+
+.card-text{
+    margin-bottom: 0px ;
+    margin-top: 0px ;
+    font-weight: 400;
+}
+
+.gearT{
+font-size: smaller;
+}
+
 nav {
     font-size: 1.25rem;
     
@@ -48,9 +75,5 @@ nav {
      transition:all .001s;
  }
  .btn-dark{
-     border-radius: 0;
- }
-
- body{
-     font-family: sans-serif;
+     border-radius: 0px;
  }

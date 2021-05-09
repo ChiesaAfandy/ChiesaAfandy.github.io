@@ -12,6 +12,10 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
     <title>KC Dealership</title>
@@ -53,25 +57,131 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 pt-5">
-                <h1 class="py-5 px-4 d-none d-lg-block">Models</h1>
-                <h2 class="py-5 px-4 d-block d-lg-none">Models</h2>
+            <div class="col-12 pt-4">
+                <h1 class="pt-5 px-4 d-none d-lg-block">Models</h1>
+                <h2 class="pt-5 px-4 d-block d-lg-none">Models</h2>
             </div>
 
-            <div class="col-12 ">
+            <div class="col-12 bg-light pt-5">
                 <div class="row">
-                    <div class="col-3">
-                        Filter
+                    <div class="col-12 col-md-4 col-xl-3">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <select class="js-example-basic-single custom-select" multiple name="Brand">
+                                    <option value="AL">All Brand</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="AL">All Brand</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="AL">All Brand</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="AL">All Brand</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-9">
+                    <div class="col-12 col-md-8 col-xl-9 card-deck">
                         <div class="row">
-                            <div class="col-6">
-                                CARD 1
+
+                            <div class="col-12 col-xl-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body d-flex justify-content-between  pb-0">
+                                        <div class="mr-auto">
+                                            <h5 class="card-title text-dark mr-2"> 2018
+                                                <br class="d-block d-sm-none"> Lancer Evolution X GSR
+                                            </h5>
+                                            <p class="card-text text-dark">Mitsubishi</p>
+                                            <p class="card-text text-secondary gearT">All-wheel drive</p>
+                                            <p class="card-text text-secondary gearT">Automatic</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <h5 class="card-title d-block text-center"> $212,740</h5>
+                                            <img src="img/cars/mitsubishi/Mitsubishi_Logo.png" alt=""
+                                                class="img-fluid logo d-block mx-auto">
+                                        </div>
+                                    </div>
+                                    <img src="img/cars/mitsubishi/HOR_XB1_Mitsubishi_Lancer_08.png" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                CARD 2
+
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                    <img src="img/cars/mitsubishi/HOR_XB1_Mitsubishi_Lancer_08.png" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                    <img src="img/nissan_orange.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                    <img src="img/nissan_orange.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -103,6 +213,13 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/47b1b45ee7.js" crossorigin="anonymous"></script>
+
+    <!-- #Select2-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="js/script.js"></script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
