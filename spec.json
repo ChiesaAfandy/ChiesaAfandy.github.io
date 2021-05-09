@@ -41,10 +41,10 @@
         "Year":"2012",
         "Pic":"img/cars/audi/MainCarsImgR8V10.png",
         "Logo":"img/cars/audi/audiLogo.png",
-        "Detail":"carsDetail.html",
-        "Buy":"carsBuyGT-R.html",
-        "Country": "Japan",
-        "Flag":"img/flag/JapanFlag.png"
+        "Detail":"carsDetailR8.html",
+        "Buy":"carsBuyR8.html",
+        "Country": "Germany",
+        "Flag":"img/flag/germany.png"
     },
     {
         "Brand":"Nissan",
@@ -87,9 +87,9 @@
         "Year":"2014",
         "Pic":"img/cars/porsche/MainCarsImg911TurboS.png",
         "Logo":"img/cars/porsche/porscheLogo.png",
-        "Detail":"carsDetail.html",
-        "Buy":"carsBuyGT-R.html",
+        "Detail":"carsDetail911.html",
+        "Buy":"carsBuy911.html",
         "Country": "Germany",
-        "Flag":"img/flag/JapanFlag.png"
+        "Flag":"img/flag/germany.png"
     }
 ]
