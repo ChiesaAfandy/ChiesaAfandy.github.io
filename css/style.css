@@ -77,3 +77,16 @@ nav {
  .btn-dark{
      border-radius: 0px;
  }
+
+ .speed {
+     font-size: 16px;
+ }
+
+ .speedText{
+     font-size: 14px;
+ }
+
+ .btn-buy{
+     border-radius: 20px;
+     border-width: medium;
+ }
