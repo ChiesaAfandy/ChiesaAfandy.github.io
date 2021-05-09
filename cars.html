@@ -113,8 +113,8 @@
                                         <select class="filterYear custom-select" data-width="100%" multiple
                                             name="Brand">
                                             <option value="All">All Year</option>
-                                            <option value="{{cars.Year}}"
-                                                ng-repeat="cars in specs | orderBy: 'Year' ">{{cars.Year}}
+                                            <option value="{{cars.Year}}" ng-repeat="cars in specs | orderBy: 'Year' ">
+                                                {{cars.Year}}
                                             </option>
                                         </select>
                                     </div>
@@ -182,14 +182,15 @@
                                             <div class="col-12 mt-4 ">
                                                 <div class="row">
                                                     <div class="col-6">
-                                                        <a href="carsDetailGT-R.html" class="button"></a>
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-block btn-buy">Buy Now</button></a>
+                                                        <a href="{{cars.Detail}}" class="button"><button type="button"
+                                                                class="btn btn-primary btn-block btn-buy" >Buy
+                                                                Now</button></a>
+
                                                     </div>
                                                     <div class="col-6">
-                                                        <a href="carsDetailGT-R.html" class="button"><button type="button"
-                                                            class="btn btn-outline-dark btn-block btn-buy">View
-                                                            Detail</button></a>
+                                                        <a href="{{cars.Detail}}" class="button"><button type="button"
+                                                                class="btn btn-outline-dark btn-block btn-buy">View
+                                                                Detail</button></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -200,7 +201,7 @@
                             </div>
 
 
-                            
+
 
                         </div>
                     </div>

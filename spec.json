@@ -17,7 +17,8 @@
         "Year":"2008",
         "Pic":"img/cars/mitsubishi/MainCarsImgLancer.png",
         "Logo":"img/cars/mitsubishi/mitsubishiLogo.png",
-        "Detail":"carsDetail.html",
+        "Detail":"carsDetailLancer.html",
+        "Buy":"carsBuyLancer.html",
         "Country": "Japan",
         "Flag":"img/flag/JapanFlag.png"
         
@@ -41,6 +42,7 @@
         "Pic":"img/cars/audi/MainCarsImgR8V10.png",
         "Logo":"img/cars/audi/audiLogo.png",
         "Detail":"carsDetail.html",
+        "Buy":"carsBuyGT-R.html",
         "Country": "Japan",
         "Flag":"img/flag/JapanFlag.png"
     },
@@ -63,6 +65,7 @@
         "Pic":"img/cars/nissan/MainCarsImgGtr.png",
         "Logo":"img/cars/nissan/nissanLogo.png",
         "Detail":"carsDetailGT-R.html",
+        "Buy":"carsBuyGT-R.html",
         "Country": "Japan",
         "Flag":"img/flag/JapanFlag.png"
     },
@@ -85,7 +88,8 @@
         "Pic":"img/cars/porsche/MainCarsImg911TurboS.png",
         "Logo":"img/cars/porsche/porscheLogo.png",
         "Detail":"carsDetail.html",
-        "Country": "Japan",
+        "Buy":"carsBuyGT-R.html",
+        "Country": "Germany",
         "Flag":"img/flag/JapanFlag.png"
     }
 ]
