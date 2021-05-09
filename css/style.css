@@ -10,7 +10,7 @@ body{
 }
 
 .logo{
-    width: 90px;
+    height: 60px;
 }
 
 .card-title{
@@ -97,4 +97,14 @@ nav {
     padding-top: 0px;
     padding-bottom: 0px;
 
+}
+
+a.button {
+    text-decoration: none;
+    color: initial;
+}
+
+.logoFlag{
+    border: 0.1px solid black;
+    height: 24px;
 }
