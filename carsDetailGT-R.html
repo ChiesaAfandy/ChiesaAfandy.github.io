@@ -29,11 +29,11 @@
     <!-- End -->
 
 
-    <div class="container-lg pb-5 pt-5">
+    <div class="container-xl pb-5 pt-5" ng-repeat="cars in specs | filter: 'Gt-R'">
         <div class="row pt-5">
 
-            <div class="col-12 .bg-white pt-5 ">
-                <div class="row" ng-repeat="cars in specs | filter : 'GT-R'">
+            <div id="buttonHide" class="col-12 .bg-white pt-5 ">
+                <div class="row">
                     <div class="col-12 col-md-8 ">
                         <div class="row">
                             <div class="col-12 col-xl-12 mb-4 ">
@@ -48,6 +48,8 @@
                                             <p class="card-text text-secondary "
                                                 style="font-weight: 100; font-size: 25px;">{{cars.Drivetrain}} /
                                                 {{cars.Gearbox}}</p>
+                                            <img src="{{cars.Flag}}" alt="flag" class="img-fluid logoFlag ">
+                                            <p class="card-text text-secondary">{{cars.Country}}</p>
                                         </div>
                                     </div>
 
@@ -60,13 +62,14 @@
                                                 style="font-weight: 100; font-size: 25px;">{{cars.Drivetrain}} /
                                                 {{cars.Gearbox}}</p>
                                             <img src="{{cars.Logo}}" alt="MainImg" class="img-fluid logo d-block ">
-                                            <img src="{{cars.Flag}}" alt="MainImg" class="img-fluid logoFlag d-block float-left align-middle mr-2">
+                                            <img src="{{cars.Flag}}" alt="flag"
+                                                class="img-fluid logoFlag d-block float-left align-middle mr-2">
                                             <p class="card-text text-secondary">{{cars.Country}}</p>
 
                                         </div>
                                     </div>
                                 </div>
-                                <img src="{{cars.Pic}}" class="card-img-top" alt="Logo">
+                                <img src="{{cars.Pic}}" class="card-img-top" alt="ic">
                                 <div class="card-body">
                                     <div class="row text-center mx-2 ">
                                         <div class="col-12">
@@ -116,12 +119,13 @@
                                 <h3 class="card-title d-block text-left">{{cars.Price}}</h3>
                             </div>
                             <div class="col-12 mb-2">
-                                <p>$500 Order Deposit and no est. Transportation Fee to your nearest delivery location
+                                <p class="card-text text-secondary gearT">$500 Order Deposit and no est. Transportation Fee to your nearest delivery location
                                 </p>
                             </div>
 
                             <div class="col-12 mb-5">
-                                <button type="button" class="btn btn-primary btn-block btn-buy">Buy</button>
+                                <button onclick="hideClass() ; showClass()" type="button"
+                                    class="btn btn-primary btn-block btn-buy">Buy</button>
                             </div>
 
                             <div class="col-12 mb-4">
@@ -144,12 +148,177 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div id="buttonShow" class="col-12 .bg-white pt-5 d-none">
+                <div class="row">
+                    <div class="col-12 col-md-7 order-md-1 order-2">
+                        <div class="card">
+                            <div class="card-body pb-0 ">
+                                <form>
+                                    <h3 class="card-title text-dark mb-4"> Delivery Location </h3>
+
+                                    <div class="form-group">
+                                        <label for="inputAddress">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress"
+                                            placeholder="1234 Main St" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress2">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2"
+                                            placeholder="Apartment, studio, or floor" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity">City</label>
+                                            <input type="text" class="form-control" id="inputCity" required>
+
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputState">State</label>
+                                            <input type="text" class="form-control" id="inputState" required>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip" required>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="card-title text-dark mt-5 mb-4"> Personal Account Details </h3>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputFirstName">First Name</label>
+                                            <input type="text" class="form-control" id="inputFirstName" required>
+
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputLastName">Last Name</label>
+                                            <input type="text" class="form-control" id="inputLastName" required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="Email">Email Address</label>
+                                            <input type="text" class="form-control" id="Email" required>
+
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="Phone">Phone Number</label>
+                                            <input type="text" class="form-control" id="Phone" required>
+                                        </div>
+                                    </div>
+
+
+                                    <button type="submit" class="btn btn-primary btn-block btn-buy mb-5 mt-5">Place
+                                        Order</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
 
 
 
+                    <div class="col-12 col-md-5 pb-5 order-md-2 order-1">
+                        <div class="row">
+                            <div class="col-12 col-xl-12 mb-1 ">
 
+                                <img src="{{cars.Pic}}" class="card-img-top" alt="pic">
+
+                                <div class="card">
+                                    <div class="card-body text-center pb-0 d-block d-md-none">
+                                        <div">
+                                            <h3 class="card-title text-dark mr-2"> {{cars.Year}} {{cars.Brand}}
+                                                {{cars.Models}}
+                                            </h3>
+                                            <p class="card-text text-secondary "
+                                                style="font-weight: 100; font-size: 20px;">{{cars.Drivetrain}} /
+                                                {{cars.Gearbox}}</p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-left pb-0 d-none d-md-block">
+                                    <div class="">
+                                        <h2 class="card-title text-dark mr-2"> {{cars.Year}} {{cars.Brand}}
+                                            {{cars.Models}}
+                                        </h2>
+                                        <p class="card-text text-secondary " style="font-weight: 100; font-size: 21px;">
+                                            {{cars.Drivetrain}} /
+                                            {{cars.Gearbox}}
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row text-center  ">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 border-right ">
+                                                <div>
+                                                    <h4 class="d-inline">{{cars.Time}}</h4>
+                                                    <p class="d-inline text-muted speed">s</p>
+                                                </div>
+                                                <div>
+                                                    <p class="d-inline text-muted ">0-60 mph</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 border-right">
+                                                <div>
+                                                    <h4 class="d-inline">{{cars.TopSpeed}}</h4>
+                                                    <p class="d-inline text-muted speed">mph</p>
+                                                </div>
+                                                <div>
+                                                    <p class="d-inline text-muted ">Top Speed</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div>
+                                                    <h4 class="d-inline">{{cars.Range}}</h4>
+                                                    <p class="d-inline text-muted speed">mi</p>
+                                                </div>
+                                                <div>
+                                                    <p class="d-inline text-muted ">range</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex justify-content-between">
+                            <h5 class="card-title d-block text-left text-secondary">Purchase Price</h5>
+                            <h3 class="card-title d-block text-left">{{cars.Price}}</h3>
+                        </div>
+
+                        <div class="col-12 mb-2">
+                            <p class="card-text text-secondary gearT">Excluding taxes and fees</p>
+                        </div>
+
+                        <div class="col-12 d-flex justify-content-between mb-0">
+                            <h4 class="card-title d-block text-left text-dark">Due Today</h4>
+                            <h3 class="card-title d-block text-left">$500</h3>
+                        </div>
+                        <div class="col-12 mb-5">
+                            <p class="card-text text-secondary gearT">Non-refundable Order Deposit</p>
+                        </div>
+
+                        <div class="col-12 mb-2 text-left">
+                            <p class="card-text text-secondary gearT">By placing this order, I agree to the Model 3
+                                Order Agreement, Terms of Use, and Privacy
+                                Notice.I acknowledge wear and tear will be present on the car. If I cancel my order, any
+                                Order
+                                Deposit and Transportation Fee paid will not be refunded.</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
 

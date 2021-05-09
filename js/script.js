@@ -25,3 +25,11 @@ $(document).ready(function() {
     );
     
 });
+
+function hideClass(){
+    document.getElementById("buttonHide").className = "d-none";
+  }
+
+  function showClass(){
+    document.getElementById("buttonShow").className = "col-12 .bg-white pt-5 d-block";
+  }
