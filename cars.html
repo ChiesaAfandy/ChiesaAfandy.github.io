@@ -64,19 +64,20 @@
 
             <div class="col-12 bg-light pt-5">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-xl-3 pt-2 pb-5">
                         <div class="row">
                             <div class="col-12">
-                                <select class="js-example-basic-single custom-select" data-width="100%" multiple
+                                <button type="button" class="btn btn-outline-dark btn-block btn-filter" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Filter</button>
+                            </div>
+                            <div class="col-12 pt-4" class="collapse" id="collapseExample">
+                                <label for="filterBrand">Brand</label>
+                                <select class="filterBrand custom-select" data-width="100%" multiple
                                     name="Brand">
-                                    <option value="AL">All Brand</option>
-                                    <option value="WY">Wyoming</option>
-                                    <option value="AL">All Brand</option>
-                                    <option value="WY">Wyoming</option>
-                                    <option value="AL">All Brand</option>
-                                    <option value="WY">Wyoming</option>
-                                    <option value="AL">All Brand</option>
-                                    <option value="WY">Wyoming</option>
+                                    <option value="All">All Brand</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Porsche">Porsche</option>
                                 </select>
                             </div>
                         </div>
@@ -84,7 +85,6 @@
 
                     <div class="col-12 col-md-8 col-xl-9 card-deck">
                         <div class="row">
-
                             <div class="col-12 col-xl-6 mb-4">
                                 <div class="card">
                                     <div class="card-body d-flex justify-content-between  pb-0">
@@ -224,47 +224,143 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-6 mb-4">
+                            
+                            <div class="col-12 col-xl-6 mb-4">
                                 <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                                    <div class="card-body d-flex justify-content-between  pb-0">
+                                        <div class="mr-auto">
+                                            <h5 class="card-title text-dark mr-2"> 2018
+                                                <br class="d-block d-sm-none"> Lancer Evolution X GSR
+                                            </h5>
+                                            <p class="card-text text-dark">Mitsubishi</p>
+                                            <p class="card-text text-secondary gearT">All-wheel drive</p>
+                                            <p class="card-text text-secondary gearT">Automatic</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <h5 class="card-title d-block text-center"> $212,740</h5>
+                                            <img src="img/cars/mitsubishi/Mitsubishi_Logo.png" alt=""
+                                                class="img-fluid logo d-block mx-auto">
+                                        </div>
                                     </div>
-                                    <img src="img/nissan_orange.png" class="card-img-top" alt="...">
+                                    <img src="img/cars/mitsubishi/HOR_XB1_Mitsubishi_Lancer_08.png" class="card-img-top"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                                        <div class="row text-center mx-2 ">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-4 border-right ">
+                                                        <div>
+                                                            <h4 class="d-inline">2.8</h4>
+                                                            <p class="d-inline text-muted speed">s</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="d-inline text-muted speedText">0-60 mph</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 border-right">
+                                                        <div>
+                                                            <h4 class="d-inline">196</h4>
+                                                            <p class="d-inline text-muted speed">mph</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="d-inline text-muted speedText">Top Speed</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div>
+                                                            <h4 class="d-inline">333</h4>
+                                                            <p class="d-inline text-muted speed">mi</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="d-inline text-muted speedText">range</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="col-12 mt-4 ">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-primary btn-block btn-buy">Buy Now</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-outline-dark btn-block btn-buy">View Detail</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-6 mb-4">
+                            <div class="col-12 col-xl-6 mb-4">
                                 <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                                    <div class="card-body d-flex justify-content-between  pb-0">
+                                        <div class="mr-auto">
+                                            <h5 class="card-title text-dark mr-2"> 2018
+                                                <br class="d-block d-sm-none"> Lancer Evolution X GSR
+                                            </h5>
+                                            <p class="card-text text-dark">Mitsubishi</p>
+                                            <p class="card-text text-secondary gearT">All-wheel drive</p>
+                                            <p class="card-text text-secondary gearT">Automatic</p>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <h5 class="card-title d-block text-center"> $212,740</h5>
+                                            <img src="img/cars/mitsubishi/Mitsubishi_Logo.png" alt=""
+                                                class="img-fluid logo d-block mx-auto">
+                                        </div>
                                     </div>
-                                    <img src="img/nissan_orange.png" class="card-img-top" alt="...">
+                                    <img src="img/cars/mitsubishi/HOR_XB1_Mitsubishi_Lancer_08.png" class="card-img-top"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                                        <div class="row text-center mx-2 ">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-4 border-right ">
+                                                        <div>
+                                                            <h4 class="d-inline">2.8</h4>
+                                                            <p class="d-inline text-muted speed">s</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="d-inline text-muted speedText">0-60 mph</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 border-right">
+                                                        <div>
+                                                            <h4 class="d-inline">196</h4>
+                                                            <p class="d-inline text-muted speed">mph</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="d-inline text-muted speedText">Top Speed</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div>
+                                                            <h4 class="d-inline">333</h4>
+                                                            <p class="d-inline text-muted speed">mi</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="d-inline text-muted speedText">range</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="col-12 mt-4 ">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-primary btn-block btn-buy">Buy Now</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-outline-dark btn-block btn-buy">View Detail</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>

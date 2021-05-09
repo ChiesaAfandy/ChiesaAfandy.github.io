@@ -90,3 +90,11 @@ nav {
      border-radius: 20px;
      border-width: medium;
  }
+
+ .btn-filter{
+    border-radius: 20px;
+    border-width: medium;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
